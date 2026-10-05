@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Services & Fees | VK Global Ventures Pvt. Ltd.</title>
+
+<meta name="description" content="VK Global Ventures Pvt. Ltd. - International education, visa, recruitment, internship, travel and business services.">
+
+<style>
+:root {
+    --navy: #071a2e;
+    --navy2: #0d2943;
+    --gold: #c7a35a;
+    --cream: #f5f1e8;
+    --white: #ffffff;
+    --muted: #b9c5d0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--navy);
+    background: var(--cream);
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: var(--navy);
+    padding: 18px 0;
+}
+
+.nav {
+    width: min(1240px, 92%);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    width: 245px;
+    height: auto;
+    background: #fff;
+    padding: 5px;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.navlinks a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navlinks a:hover {
+    color: var(--gold);
+}
+
+.navlinks .active {
+    color: var(--gold);
+}
+
+/* HERO */
+.hero {
+    background:
+        linear-gradient(135deg, var(--navy), var(--navy2));
+    color: #fff;
+    text-align: center;
+    padding: 85px 20px 75px;
+}
+
+.hero .eyebrow {
+    color: var(--gold);
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 6vw, 68px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 760px;
+    margin: auto;
+    color: #e1e8ee;
+    font-size: 17px;
+}
+
+/* SERVICES */
+.services {
+    width: min(1150px, 92%);
+    margin: 65px auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title .line {
+    width: 55px;
+    height: 3px;
+    background: var(--gold);
+    margin: 0 auto 18px;
+}
+
+.section-title h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    color: var(--navy);
+}
+
+.section-title p {
+    color: #64717d;
+    margin-top: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    border: 1px solid #e2ddd2;
+    box-shadow: 0 8px 25px rgba(7,26,46,0.08);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(7,26,46,0.14);
+}
+
+.icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: var(--navy);
+    font-family: Georgia, serif;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #5f6b75;
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+.card ul {
+    margin: 17px 0 22px 18px;
+    color: #5f6b75;
+    font-size: 14px;
+}
+
+.card li {
+    margin-bottom: 6px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background: var(--navy);
+    color: #fff;
+    padding: 11px 18px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+/* FEE NOTE */
+.fee-note {
+    width: min(1000px, 92%);
+    margin: 0 auto 65px;
+    background: var(--navy);
+    color: #fff;
+    border-left: 5px solid var(--gold);
+    padding: 30px 35px;
+    border-radius: 8px;
+}
+
+.fee-note h3 {
+    color: var(--gold);
+    margin-bottom: 8px;
+    font-family: Georgia, serif;
+    font-size: 24px;
+}
+
+.fee-note p {
+    color: #dce4eb;
+    font-size: 15px;
+}
+
+/* CTA */
+.cta {
+    background: var(--navy2);
+    color: #fff;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.cta h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.cta p {
+    color: #d8e0e7;
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.cta .btn {
+    background: var(--gold);
+    color: var(--navy);
+    padding: 13px 28px;
+}
+
+.cta .btn:hover {
+    background: #fff;
+}
+
+/* FOOTER */
+footer {
+    background: #04111f;
+    color: #b9c5d0;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 14px;
+}
+
+footer strong {
+    color: #fff;
+}
+
+/* MOBILE */
+@media (max-width: 850px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .navlinks {
+        justify-content: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 65px 20px;
+    }
+
+    .section-title h2,
+    .cta h2 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav class="nav">
+
+        <!-- VK GLOBAL LOGO -->
+        <a href="index.html">
+            <img
+                class="logo"
+                src="https://vkglobalventures.in/logo.png"
+                alt="VK Global Ventures Pvt. Ltd."
+            >
+        </a>
+
+        <div class="navlinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="businesses.html">Our Businesses</a>
+            <a href="fees.html" class="active">Services & Fees</a>
+            <a href="index.html#global-presence">Global Presence</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="eyebrow">VK GLOBAL VENTURES</div>
+
+    <h1>Services & Fees</h1>
+
+    <p>
+        Professional services connecting people, businesses and opportunities
+        across India and international markets.
+    </p>
+</section>
+
+<section class="services">
+
+    <div class="section-title">
+        <div class="line"></div>
+        <h2>Our Services</h2>
+        <p>Choose the service you are interested in and request a personalised quotation.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h3>Overseas Education</h3>
+            <p>
+                Education counselling and international admission assistance
+                for students planning to study abroad.
+            </p>
+            <ul>
+                <li>Course & university guidance</li>
+                <li>Admission assistance</li>
+                <li>Application support</li>
+            </ul>
+            <a href="contact.html" class="btn">Get a Quote</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">✈</div>
+            <h3>Visa Services</h3>
+            <p>
+                Assistance for eligible applicants seeking international
+                travel, study and other visa services.
+            </p>
+            <ul>
+                <li>Visa documentation guidance</li>
+                <li>Application assistance</li>
+                <li>International destinations</li>
+            </ul>
+            <a href="contact.html" class="btn">Get a Quote</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌍</div>
+            <h3>International Internships</h3>
+            <p>
+                International internship and career pathway assistance,
+                particularly for hospitality and related sectors.
+            </p>
+            <ul>
+                <li>Internship opportunities</li>
+                <li>International placements</li>
+                <li>Career assistance</li>
+            </ul>
+            <a href="contact.html" class="btn">Get a Quote</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">💼</div>
+            <h3>Overseas Recruitment</h3>
+            <p>
+                Recruitment and placement assistance connecting candidates
+                with international employment opportunities.
+            </p>
+            <ul>
+                <li>Candidate sourcing</li>
+                <li>Hospitality recruitment</li>
+                <li>International opportunities</li>
+            </ul>
+            <a href="contact.html" class="btn">Get a Quote</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏨</div>
+            <h3>Travel & Holidays</h3>
+            <p>
+                International travel planning and holiday services for
+                individuals and groups.
+            </p>
+            <ul>
+                <li>Holiday packages</li>
+                <li>Travel assistance</li>
+                <li>International destinations</li>
+            </ul>
+            <a href="contact.html" class="btn">Get a Quote</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">🤝</div>
+            <h3>Business Services</h3>
+            <p>
+                Business and international consultancy support for companies,
+                partners and entrepreneurs.
+            </p>
+            <ul>
+                <li>Business consultancy</li>
+                <li>International partnerships</li>
+                <li>Business support services</li>
+            </ul>
+            <a href="contact.html" class="btn">Get a Quote</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="fee-note">
+    <h3>Service Fees</h3>
+    <p>
+        Service charges may vary depending on the destination, service,
+        documentation, government requirements and individual case.
+        Please contact our team for the applicable fee and a personalised quotation.
+    </p>
+</section>
+
+<section class="cta">
+    <h2>Need More Information?</h2>
+
+    <p>
+        Our team can explain the service, applicable charges and next steps
+        based on your requirements.
+    </p>
+
+    <a href="contact.html" class="btn">Contact VK Global</a>
+</section>
+
+<footer>
+    <p>
+        © 2026 <strong>VK Global Ventures Pvt. Ltd.</strong>
+        All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>
